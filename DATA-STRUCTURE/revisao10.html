@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let v = [10, 20, 30, 40, 50];
+        let posicao = 1;
+        v.push(0); // abre uma posição no final
+        
+        for (let i = posicao; i < v.length - 1; i++) {
+            v[i] = v[i+1];
+            console.log('Vetor na ' + (v.length-i) + 'ª passagem' + v);
+        }
+        
+        v.pop();
+        
+        console.log(v);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
